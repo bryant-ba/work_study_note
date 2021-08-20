@@ -1,0 +1,78 @@
+xtrabackup搭建mysql从节点
+打通主从节点无密登录
+
+从节点上创建 /data/tmp/backup_full_mysql 目录
+
+主节点上创建xtrabk数据库用户
+create user 'xtrabk'@'localhost' identified by 'mysql_xtrabk_password';
+GRANT RELOAD, PROCESS, LOCK TABLES, REPLICATION CLIENT ON *.* TO 'xtrabk'@'localhost';
+flush privileges;
+
+编辑主节点上的xtrabakcup备份脚本
+#!/bin/sh
+/data/tmp/percona-xtrabackup-2.4.20-Linux-x86_64/bin/innobackupex \
+--defaults-file=/etc/my.cnf \
+--user=xtrabk \
+--password='mysql_xtrabk_password' \
+--stream=tar --parallel=5 \
+--no-timestamp  \
+/data/tmp/backup_full_mysql | ssh -p 22 user@ip " gzip - > /data/tmp/backup_full_mysql/backup.tar.gz"
+后台执行脚本
+nohup sh 1.sh  > 1.log 2>&1 &
+可能需要依赖安装包libaio
+http://mirror.centos.org/centos/7/os/x86_64/Packages/libaio-0.3.109-13.el7.x86_64.rpm
+201120 16:21:56 Executing UNLOCK TABLES
+201120 16:21:56 All tables unlocked
+201120 16:21:56 [00] Streaming ib_buffer_pool to <STDOUT>
+201120 16:21:56 [00]        ...done
+201120 16:21:56 Backup created in directory '/data/tmp/backup_full_mysql/'
+MySQL binlog position: filename 'mysql-bin.000274', position '50719887', GTID of the last change 'd7c47dad-cfb1-11e9-8c12-00163e123ee6:1-276096140'
+201120 16:21:56 [00] Streaming <STDOUT>
+201120 16:21:56 [00]        ...done
+201120 16:21:56 [00] Streaming <STDOUT>
+201120 16:21:56 [00]        ...done
+xtrabackup: Transaction log of lsn (261500205475) to (261503108055) was copied.
+201120 16:21:57 completed OK!
+显示至此代表已经打包传送ok
+
+创建mysql目录
+mkdir /data/mysql/{mysqltmp,redolog,data,log,undolog} -p
+
+从节点解压，一致性恢复，从节点数据要清空
+/data/tmp/percona-xtrabackup-2.4.20-Linux-x86_64/bin/innobackupex --defaults-file=/etc/my.cnf --apply-log /data/tmp/backup_full_mysql
+
+根据my.cnf配置恢复到指定路径
+/data/tmp/percona-xtrabackup-2.4.20-Linux-x86_64/bin/innobackupex --defaults-file=/etc/my.cnf --move-back /data/tmp/backup_full_mysql
+
+更改mysql目录属主
+> /data/mysql/log/mysql_run.err
+chmod 640 /data/mysql/log/mysql_run.err
+chown mysql.mysql -R /usr/local/mysql
+chown mysql.mysql -R /data/mysql
+启动mysql
+/usr/local/mysql/bin/mysqld_safe --user=mysql &
+
+获取GTID
+cd /data/tmp/backup_full_mysql && cat xtrabackup_binlog_info
+
+创建主从同步
+主库创建主从同步的数据库用户
+create user 'xxx'@'slave_ip'  identified by 'password' ;
+grant replication slave on *.* to 'xxx'@'slave_ip' identified by 'password' ;
+flush privileges;
+
+从库执行
+reset master;
+
+reset slave all;
+
+CHANGE MASTER TO  
+MASTER_HOST='master_ip',    
+MASTER_USER='xxx',    
+MASTER_PASSWORD='password',    
+MASTER_PORT=3306,    
+MASTER_AUTO_POSITION = 1;  
+
+set global gtid_purged='上述步骤获取的GTID';
+
+start slave;
