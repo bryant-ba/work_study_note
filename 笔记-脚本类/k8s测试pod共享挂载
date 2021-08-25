@@ -16,8 +16,8 @@ spec:
     volumeMounts:
       - name: shared-data
         mountPath: /usr/share/nginx/html
-  - name: centos-container
-    image: centos
+  - name: debian-container
+    image: debian
     volumeMounts:
       - name: shared-data
         mountPath: /pod-data
