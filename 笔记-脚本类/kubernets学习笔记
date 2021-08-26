@@ -27,3 +27,6 @@ Lifecycle 字段。它定义的是 Container Lifecycle Hooks。顾名思义，Co
 也就是说，在 postStart 启动时，ENTRYPOINT 有可能还没有结束。当然，如果 postStart 执行超时或者错误，Kubernetes 会在该 Pod 的 Events 中报出该容器启动失败的错误信息，导致 Pod 也处于失败的状态。
 而类似地，preStop 发生的时机，则是容器被杀死之前（比如，收到了 SIGKILL 信号）。而需要明确的是，preStop 操作的执行，是同步的。所以，它会阻塞当前的容器杀死流程，直到这个 Hook 定义操作完成之后，才允许容器被杀死，这跟 postStart 不一样。所以，在这个例子中，我们在容器成功启动之后，在 /usr/share/message 里写入了一句“欢迎信息”（即 postStart 定义的操作）。而在这个容器被删除之前，我们则先调用了 nginx 的退出指令（即 preStop 定义的操作），从而实现了容器的“优雅退出”。
 postStart和ENTRYPOINT是异步执行，preStop和SIGKILL是同步执行的。
+prestop和poststart不同之处在于poststart与entrypoint启动顺序是entrypoint先于poststart，但是poststart并不会等待entrypoint完成之后再执行。
+而prestop与容器退出是同步的，必须执行完成prestop容器才会退出。
+
