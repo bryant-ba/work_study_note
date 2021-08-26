@@ -30,3 +30,18 @@ postStart和ENTRYPOINT是异步执行，preStop和SIGKILL是同步执行的。
 prestop和poststart不同之处在于poststart与entrypoint启动顺序是entrypoint先于poststart，但是poststart并不会等待entrypoint完成之后再执行。
 而prestop与容器退出是同步的，必须执行完成prestop容器才会退出。
 
+pod对象在kubernets中的生命周期
+pod生命周期的变化，主要体现在Pod API对象的Status部分，这是除了Metadata和Spec之外的第三个重要字段，pod.status.phase 代表pod的当前状态：
+1. Pending 这个状态意味着，pod的yaml文件已经提交给kubernets执行，api对象已经创建并保存在etcd中。但是这个pod里有些容器因为某种原因没有顺利被创建。比如，调度不成功。
+2. Running 这个状态下，pod已经调度成功，和一个具体的node节点绑定，pod包含的容器也已经全部创建成功，并且至少有一个正在运行中。
+3. Succeeded 这个状态意味着，Pod 里的所有容器都正常运行完毕，并且已经退出了。这种情况在运行一次性任务时最为常见。
+4. Faild 这个状态下，Pod 里至少有一个容器以不正常的状态（非 0 的返回码）退出。这个状态的出现，意味着你得想办法 Debug 这个容器的应用，比如查看 Pod 的 Events 和日志。
+5. Unknown 这是一个异常状态，意味着 Pod 的状态不能持续地被 kubelet 汇报给 kube-apiserver，这很有可能是主从节点（Master 和 Kubelet）间的通信出现了问题。
+
+Pod 对象的 Status 字段，还可以再细分出一组 Conditions。这些细分状态的值包括：PodScheduled、Ready、Initialized，以及 Unschedulable。它们主要用于描述造成当前 Status 的具体原因是什么。
+
+对于 Pod 状态是 Ready，实际上不能提供服务的情况能想到几个例子：
+1. 程序本身有 bug，本来应该返回 200，但因为代码问题，返回的是500；
+2. 程序因为内存问题，已经僵死，但进程还在，但无响应；
+3. Dockerfile 写的不规范，应用程序不是主进程，那么主进程出了什么问题都无法发现；
+4. 程序出现死循环。
