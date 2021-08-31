@@ -22,7 +22,7 @@ select count(*) from table_history_stat where GMT_CREATE <  date(date_add(now(),
 SELECT table_schema FROM information_schema.TABLES WHERE table_name = 'TB_UHOME_PATROL_SCHEDULE_HIS';
 查找某个表在哪个库
 
-show binlog events in 'mysql-bin.000243';
+show binlog events in 'mysql-bin.006195';
 查看binlog日志
 
 ALTER TABLE service_attr_inst_his  modify attr_value varchar(2048);
