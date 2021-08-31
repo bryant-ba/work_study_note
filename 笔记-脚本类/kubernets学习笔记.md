@@ -2,11 +2,15 @@ docker迅速发展的三个重要原因
 1.Docker image通过技术手段解决了PaaS的根本问题
 2.Docker 容器同开发者之间的密切关系
 容器其实是一种沙盒技术，沙盒的“边界”是容器的基础
+
 计算机进程执行起来，就从磁盘上的二进制文件，变成了计算机内存钟的数据，寄存器里的值，堆栈中的指令，被打开的文件，以及各种设备的状态信息的集合。
 程序运行起来后计算机的执行环境的综合--进程。
+
 对于进程来说，静态表现就是程序，一旦运行起来就变成了计算机里数据和状态的总和，这是进程的动态表现，而容器的核心功能，就是通过约束和修改进程的动态表现，创造出一个边界。
+
 对于容器来说，Cgroups 技术是用来制造约束的主要手段，而Namespace 技术则是用来修改进程视图的主要方法。
 `docker run  -it  busybox /bin/sh` 创建一个容器，-it 参数指定了启动容器后，给一个TTY，与容器标准输入相关联。
+
 查看docker容器的namespace： 1. docker ps拿到containerID 2. 有三种常用方式查看docker在宿主机的PID：1) 直接查看文件cat /sys/fs/cgroup/memory/docker/<container ID>/cgroup.procs 2）docker container top <containerID> 3） docker inspect -f '{{.State.Pid}}' <containerID> 3. 拿到进程ID后，执行ll /proc/<PID>/ns/ 可查看docker启用的具体Namespace参数 docker启用的六个Namespace。
 
 kubeadm 的工作原理
@@ -16,6 +20,7 @@ kubelet 是 Kubernetes 项目用来操作 Docker 等容器运行时的核心组�
 如果现在 kubelet 本身就运行在一个容器里，那么直接操作宿主机就会变得很麻烦。对于网络配置来说还好，kubelet 容器可以通过不开启 Network Namespace（即 Docker 的 host network 模式）的方式，直接共享宿主机的网络栈。可是，要让 kubelet 隔着容器的 Mount Namespace 和文件系统，操作宿主机的文件系统，就有点儿困难了。
 kubeadm 选择了一种妥协方案：把 kubelet 直接运行在宿主机上，然后使用容器部署其他的 Kubernetes 组件。
 kubeadm init 的工作流程
+
 当你执行 kubeadm init 指令后，kubeadm 首先要做的，是一系列的检查工作，以确定这台机器可以用来部署 Kubernetes。这一步检查，我们称为“Preflight Checks”，它可以为你省掉很多后续的麻烦。其实，Preflight Checks 包括了很多方面，比如：
 Linux 内核的版本必须是否是 3.10 以上？Linux Cgroups 模块是否可用？机器的 hostname 是否标准？在 Kubernetes 项目里，机器的名字以及一切存储在 Etcd 中的 API 对象，都必须使用标准的 DNS 命名（RFC 1123）。用户安装的 kubeadm 和 kubelet 的版本是否匹配？机器上是不是已经安装了 Kubernetes 的二进制文件？Kubernetes 的工作端口 10250/10251/10252 端口是不是已经被占用？ip、mount 等 Linux 指令是否存在？Docker 是否已经安装？
 在通过了 Preflight Checks 之后，kubeadm 要为你做的，是生成 Kubernetes 对外提供服务所需的各种证书和对应的目录。
@@ -26,7 +31,9 @@ Lifecycle 字段。它定义的是 Container Lifecycle Hooks。顾名思义，Co
 先说 postStart 吧。它指的是，在容器启动后，立刻执行一个指定的操作。需要明确的是，postStart 定义的操作，虽然是在 Docker 容器 ENTRYPOINT 执行之后，但它并不严格保证顺序。
 也就是说，在 postStart 启动时，ENTRYPOINT 有可能还没有结束。当然，如果 postStart 执行超时或者错误，Kubernetes 会在该 Pod 的 Events 中报出该容器启动失败的错误信息，导致 Pod 也处于失败的状态。
 而类似地，preStop 发生的时机，则是容器被杀死之前（比如，收到了 SIGKILL 信号）。而需要明确的是，preStop 操作的执行，是同步的。所以，它会阻塞当前的容器杀死流程，直到这个 Hook 定义操作完成之后，才允许容器被杀死，这跟 postStart 不一样。所以，在这个例子中，我们在容器成功启动之后，在 /usr/share/message 里写入了一句“欢迎信息”（即 postStart 定义的操作）。而在这个容器被删除之前，我们则先调用了 nginx 的退出指令（即 preStop 定义的操作），从而实现了容器的“优雅退出”。
+
 postStart和ENTRYPOINT是异步执行，preStop和SIGKILL是同步执行的。
+
 prestop和poststart不同之处在于poststart与entrypoint启动顺序是entrypoint先于poststart，但是poststart并不会等待entrypoint完成之后再执行。
 而prestop与容器退出是同步的，必须执行完成prestop容器才会退出。
 
@@ -64,4 +71,16 @@ metadata.annotations - Pod的所有Annotation
 容器的CPU request
 容器的memory limit
 容器的memory request
+
 Downward API 能够获取到的信息，一定是 Pod 里的容器进程启动之前就能够确定下来的信息。
+Kubernetes 项目的 Projected Volume 其实只有三种，因为第四种 ServiceAccountToken，只是一种特殊的 Secret 而已。
+
+Service Account 对象的作用，就是 Kubernetes 系统内置的一种“服务账户”，它是 Kubernetes 进行权限分配的对象。比如，Service Account A，可以只被允许对 Kubernetes API 进行 GET 操作，而 Service Account B，则可以有 Kubernetes API 的所有操作权限。
+
+每一个 Pod，都已经自动声明一个类型是 Secret、名为 default-token-xxxx 的 Volume，然后 自动挂载在每个容器的一个固定目录上。
+
+Kubernetes 其实在每个 Pod 创建的时候，自动在它的 spec.volumes 部分添加上了默认 ServiceAccountToken 的定义，然后自动给每个容器加上了对应的 volumeMounts 字段。这个过程对于用户来说是完全透明的。
+
+Kubernetes 客户端以容器的方式运行在集群里，然后使用 default Service Account 自动授权的方式，被称作“InClusterConfig”
+
+在 Kubernetes 中，你可以为 Pod 里的容器定义一个健康检查“探针”（Probe）。这样，kubelet 就会根据这个 Probe 的返回值决定这个容器的状态，而不是直接以容器镜像是否运行（来自 Docker 返回的信息）作为依据。

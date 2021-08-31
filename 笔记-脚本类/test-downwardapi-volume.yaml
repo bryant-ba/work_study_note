@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: client-container
-      image: k8s.gcr.io/busybox
+      image: busybox
       command: ["sh", "-c"]
       args:
       - while true; do
