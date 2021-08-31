@@ -4,6 +4,9 @@ select a.delay_time ,a.GMT_MODIFIED from delay_stat a ,pipeline b where a.pipeli
 show master status\G;
 查找位点
 
+show OPEN TABLES where In_use > 0;
+查看是否锁表
+
 SELECT * FROM information_schema.processlist WHERE command != 'Sleep' and time > 5 and user <> 'system user' and user <> 'replicator' and DB <> 'NULL' order by time\G
 查找慢sql
 
