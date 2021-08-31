@@ -7,6 +7,12 @@ show master status\G;
 show OPEN TABLES where In_use > 0;
 查看是否锁表
 
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;
+查看正在锁的事务
+
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;
+查看等待锁的事务
+
 SELECT * FROM information_schema.processlist WHERE command != 'Sleep' and time > 5 and user <> 'system user' and user <> 'replicator' and DB <> 'NULL' order by time\G
 查找慢sql
 
