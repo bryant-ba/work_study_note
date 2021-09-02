@@ -19,7 +19,7 @@ SELECT * FROM information_schema.processlist WHERE command != 'Sleep' and time >
 select count(*) from table_history_stat where GMT_CREATE <  date(date_add(now(),interval -2 day));
 查询两天前的条数
 
-SELECT table_schema FROM information_schema.TABLES WHERE table_name = 'TB_UHOME_PATROL_SCHEDULE_HIS';
+SELECT table_schema FROM information_schema.TABLES WHERE table_name = 'zhonghai_pulltime';
 查找某个表在哪个库
 
 show binlog events in 'mysql-bin.006195';
