@@ -118,3 +118,11 @@ livenessProbe:
       initialDelaySeconds: 15
       periodSeconds: 20
 tcp请求方式
+
+Pod 这个看似复杂的 API 对象，实际上就是对容器的进一步抽象和封装而已。
+“容器”镜像虽然好用，但是容器这样一个“沙盒”的概念，对于描述应用来说，还是太过简单了。这就好比，集装箱固然好用，但是如果它四面都光秃秃的，吊车还怎么把这个集装箱吊起来并摆放好呢？所以，Pod 对象，其实就是容器的升级版。它对容器进行了组合，添加了更多的属性和字段。这就好比给集装箱四面安装了吊环，使得 Kubernetes 这架“吊车”，可以更轻松地操作它。
+Kubernetes 操作这些“集装箱”的逻辑，都由控制器（Controller）完成。
+
+Deployment -- 最基本的控制器，例如nginx-deployment.yaml中，这个 Deployment 定义的编排动作非常简单，即：确保携带了 app=nginx 标签的 Pod 的个数，永远等于 spec.replicas 指定的个数，即 2 个。这就意味着，如果在这个集群中，携带 app=nginx 标签的 Pod 的个数大于 2 的时候，就会有旧的 Pod 被删除；反之，就会有新的 Pod 被创建。
+
+kube-controller-manager 组件就是一系列控制器的集合。可以在kubernets/pkg/controller/下看到一系列的控制器，这个目录下面的每一个控制器，都以独有的方式负责某种编排功能。而我们的 Deployment，正是这些控制器中的一种。

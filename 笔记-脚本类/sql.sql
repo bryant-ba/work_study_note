@@ -26,7 +26,10 @@ show binlog events in 'mysql-bin.006195';
 查看binlog日志
 
 ALTER TABLE service_attr_inst_his  modify attr_value varchar(2048);
-modify修改表字段
+modify修改表字段属性
+
+ALTER TABLE service_attr_inst_his  modify attr_value varchar(2048) after GMT_CREATE;
+modify修改表字段位置
 
 TRUNCATE TABLE tablename
 清空表
