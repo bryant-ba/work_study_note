@@ -31,8 +31,11 @@ modify修改表字段属性
 ALTER TABLE service_attr_inst_his  modify attr_value varchar(2048) after GMT_CREATE;
 modify修改表字段位置
 
-TRUNCATE TABLE tablename
+TRUNCATE TABLE tablename;
 清空表
+
+SET GLOBAL SQL_SLAVE_SKIP_COUNTER = 1;
+mysql主从跳过一个事务
 
 
 reset slave all;
