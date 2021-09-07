@@ -126,3 +126,34 @@ Kubernetes 操作这些“集装箱”的逻辑，都由控制器（Controller�
 Deployment -- 最基本的控制器，例如nginx-deployment.yaml中，这个 Deployment 定义的编排动作非常简单，即：确保携带了 app=nginx 标签的 Pod 的个数，永远等于 spec.replicas 指定的个数，即 2 个。这就意味着，如果在这个集群中，携带 app=nginx 标签的 Pod 的个数大于 2 的时候，就会有旧的 Pod 被删除；反之，就会有新的 Pod 被创建。
 
 kube-controller-manager 组件就是一系列控制器的集合。可以在kubernets/pkg/controller/下看到一系列的控制器，这个目录下面的每一个控制器，都以独有的方式负责某种编排功能。而我们的 Deployment，正是这些控制器中的一种。
+这些控制器之所以被统一放在 pkg/controller 目录下，就是因为它们都遵循 Kubernetes 项目中的一个通用编排模式，即：控制循环（control loop）。
+比如，现在有一种待编排的对象 X，它有一个对应的控制器。那么，我就可以用一段 Go 语言风格的伪代码，为你描述这个控制循环：
+
+for {
+  实际状态 := 获取集群中对象X的实际状态（Actual State）
+  期望状态 := 获取集群中对象X的期望状态（Desired State）
+  if 实际状态 == 期望状态{
+    什么都不做
+  } else {
+    执行编排动作，将实际状态调整为期望状态
+  }
+}
+
+实际状态数据来源： 1、kubelet通过心跳汇报 2、监控系统中保存的应用监控数据 3、控制器自己收集
+期望状态，一般来自于用户提交的 YAML 文件。
+例如 Deployment 对象中 Replicas 字段的值，这些信息往往都保存在 Etcd 中。
+
+1. Deployment 控制器从 Etcd 中获取到所有携带了“app: nginx”标签的 Pod，然后统计它们的数量，这就是实际状态； 
+2. Deployment 对象的 Replicas 字段的值就是期望状态； 
+3. Deployment 控制器将两个状态做比较，然后根据比较结果，确定是创建 Pod，还是删除已有的 Pod。
+
+可以看到，一个 Kubernetes 对象的主要编排逻辑，实际上是在第三步的“对比”阶段完成的。这个操作，通常被叫作调谐（Reconcile）。这个调谐的过程，则被称作“Reconcile Loop”（调谐循环）或者“Sync Loop”（同步循环）。调谐的最终结果，往往都是对被控制对象的某种写操作。
+增加 Pod，删除已有的 Pod，或者更新 Pod 的某个字段。这也是 Kubernetes 项目“面向 API 对象编程”的一个直观体现。
+
+k8s本质上也是应用面向对象的思维来支撑业务部署过程的抽象，只不过对象的描述不是通过代码实现，而是通过"API"方式实现，这样的好处是与代码实现解耦，使用更加灵活！解耦的方式是通过描述式、声明式的“语言”实现，具体是Yaml或其他声明式实现。
+
+难理解的点：
+其实，像 Deployment 这种控制器的设计原理，就是我们前面提到过的，“用一种对象管理另一种对象”的“艺术”。
+其中，这个控制器对象本身，负责定义被管理对象的期望状态。比如，Deployment 里的 replicas=2 这个字段。而被控制对象的定义，则来自于一个“模板”。
+比如，Deployment 里的 template 字段。可以看到，Deployment 这个 template 字段里的内容，跟一个标准的 Pod 对象的 API 定义，丝毫不差。而所有被这个 Deployment 管理的 Pod 实例，其实都是根据这个 template 字段的内容创建出来的。像 Deployment 定义的 template 字段，在 Kubernetes 项目中有一个专有的名字，叫作 PodTemplate（Pod 模板）。这个概念非常重要，因为后面我要讲解到的大多数控制器，都会使用 PodTemplate 来统一定义它所要管理的 Pod。更有意思的是，我们还会看到其他类型的对象模板，比如 Volume 的模板。
+
