@@ -161,3 +161,8 @@ limit 20
 ./redis-trib.rb create  192.168.66.2:7000 192.168.66.2:7001 192.168.66.2:7002 192.168.66.3:7003 192.168.66.3:7004 192.168.66.3:7005
 使用 --replicas 1 创建 每个master带一个 slave 指令
 ./redis-trib.rb create --replicas 1  10.51.114.17:43000 10.51.114.17:43001 10.51.114.18:43000 10.51.114.18:43001 10.51.114.19:43000 10.51.114.19:43001
+
+-- 更改主从忽略表
+stop slave;
+CHANGE REPLICATION FILTER REPLICATE_WILD_IGNORE_TABLE = ('dis_nc.%');
+start slave;
