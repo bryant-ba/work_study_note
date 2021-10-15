@@ -1,3 +1,10 @@
+select `name` from mysql.proc where db = 'your_db_name' and `type` = 'PROCEDURE'
+查找全部的存储过程
+
+show create procedure proc_name;
+show create function func_name;
+查看存储过程或函数的创建代码
+
 select a.delay_time ,a.GMT_MODIFIED from delay_stat a ,pipeline b where a.pipeline_id = b.id and b.id = ? order by a.GMT_MODIFIED desc limit 1;
 查找otter
 
