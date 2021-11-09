@@ -1,0 +1,536 @@
+Date: Tue, 15 Jun 2021 13:56:52 +0800 (CST)
+Message-ID: <523753689.30.1623736612702@cdh6-slave1>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_29_1956544817.1623736612701"
+
+------=_Part_29_1956544817.1623736612701
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=E5=AE=89=E8=A3=85=E9=85=8D=E7=BD=AEredis=E9=9B=86=E7=BE=A4</tit=
+le>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=E5=AE=89=E8=A3=85=E9=85=8D=E7=BD=AEredis=E9=9B=86=E7=BE=A4</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>=E6=B2=A1=E6=9C=89=E7=89=B9=E6=AE=8A=E6=A0=87=E5=BF=97=EF=BC=8C=E5=88=99=
+=E4=B8=89=E5=8F=B0=E6=9C=BA=E5=99=A8=E9=83=BD=E6=93=8D=E4=BD=9C</p>
+</div>
+</div>
+<ul>
+<li><p class=3D"auto-cursor-target">=E6=9C=BA=E5=99=A8=E5=88=9D=E5=A7=8B=E5=
+=8C=96</p></li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">[root@t=
+est-0001 data]# mkdir tools &amp;&amp; cd tools
+[root@test-0001 ubuntu]# groupadd uhome &amp;&amp; useradd -g uhome uhome &=
+amp;&amp; echo "xxxxx" | passwd --stdin uhome
+[root@test-0001 ubuntu]# mkdir -p /data/uhome &amp;&amp; chown uhome:uhome =
+-R /data/uhome &amp;&amp; chmod 775 -R /data/uhome</pre>=20
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>=E4=B8=8B=E8=BD=BDredis =E5=AE=89=E8=A3=85=E5=8C=85=EF=BC=8C=E7=BC=96=
+=E8=AF=91=E5=AE=89=E8=A3=85=E9=85=8D=E7=BD=AE</li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence"> [root@=
+test-0001 ubuntu]# wget http://download.redis.io/releases/redis-3.2.8.tar.g=
+z
+ [root@test-0001 ubuntu]# tar -xf redis-3.2.8.tar.gz &amp;&amp; mkdir -p /u=
+sr/local/redis/nodes
+ [root@test-0001 ubuntu]# cd redis-3.2.8
+ [root@test-0001 redis-3.2.8]# make PREFIX=3D/usr/local/redis install=20
+ [root@test-0001 redis-3.2.8]# echo "export PATH=3D/usr/local/redis/bin:$PA=
+TH" &gt;&gt; /etc/profile
+ [root@test-0001 redis-3.2.8]# source /etc/profile
+ [root@test-0001 redis-3.2.8]# redis-cli -v
+ redis-cli 3.2.8
+ [root@test-0001 redis-3.2.8]# mkdir -p  /etc/redis  /data/redis/redis-{430=
+00,43001,46000,46001,47000,47001,48000,48001}
+ [root@test-0001 redis-3.2.8]# chown uhome:uhome -R /etc/redis/ /data/redis=
+ /usr/local/redis/</pre>=20
+</div>
+</div>
+<ul>
+<li>=E7=BC=96=E8=BE=91=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6=EF=BC=8C=E8=BF=
+=99=E9=87=8C=E5=8F=AA=E8=B4=B4=E5=87=BA=E4=B8=80=E4=B8=AA=E9=85=8D=E7=BD=AE=
+=E6=96=87=E4=BB=B6=EF=BC=8C=E5=85=B6=E4=BB=96=E7=9A=84=E8=87=AA=E8=A1=8C=E6=
+=8B=B7=E8=B4=9D=E4=BF=AE=E6=94=B9=EF=BC=8C=E6=80=BB=E5=85=B1=E8=A6=81=E5=85=
+=AB=E4=B8=AA=E6=96=87=E4=BB=B6=EF=BC=8C=E5=AD=98=E6=94=BE=E8=B7=AF=E5=BE=84=
+ /etc/redis/</li>
+</ul>
+<p><a href=3D"/download/attachments/65634/redis-43000.conf?version=3D1&amp;=
+modificationDate=3D1605771849084&amp;api=3Dv2" data-linked-resource-id=3D"1=
+966243" data-linked-resource-version=3D"1" data-linked-resource-type=3D"att=
+achment" data-linked-resource-default-alias=3D"redis-43000.conf" data-linke=
+d-resource-content-type=3D"application/octet-stream" data-linked-resource-c=
+ontainer-id=3D"65634" data-linked-resource-container-version=3D"6">redis-43=
+000.conf</a></p>
+<ul>
+<li>=E5=90=AF=E5=8A=A8=E6=9C=8D=E5=8A=A1</li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">[root@t=
+est-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-server /et=
+c/redis/redis-43000.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-43001.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-46000.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-46001.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-47000.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-47001.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-48000.conf "
+[root@test-0001 redis-3.2.8]# su - uhome -c "/usr/local/redis/bin/redis-ser=
+ver /etc/redis/redis-48001.conf "</pre>=20
+</div>
+</div>
+<p>&nbsp; &nbsp;</p>
+<div class=3D"confluence-information-macro confluence-information-macro-not=
+e">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p><span style=3D"color: rgb(23,43,77);">Redis=E7=9A=84=E7=AB=AF=E5=8F=A3=
+=E5=90=AB=E4=B9=89=EF=BC=9A&nbsp; &nbsp;&nbsp;</span><br><span style=3D"col=
+or: rgb(23,43,77);">43000/43001 =E4=BC=9A=E8=AF=9D=E4=B8=9A=E5=8A=A1&nbsp; =
+&nbsp; &nbsp; &nbsp;</span><br><span style=3D"color: rgb(23,43,77);">46000/=
+46001 =E7=A7=9F=E8=B5=81=E8=AE=A1=E8=B4=B9&nbsp; &nbsp; &nbsp; &nbsp;</span=
+><br><span style=3D"color: rgb(23,43,77);">47000/47001 B=E7=AB=AF&nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br><span style=3D"color=
+: rgb(23,43,77);">48000/48001 C=E7=AB=AF&nbsp;<span>&nbsp;</span></span></p=
+>
+</div>
+</div>
+<p>&nbsp; &nbsp; &nbsp;&nbsp;</p>
+<ul>
+<li>=E5=AE=89=E8=A3=85=E9=85=8D=E7=BD=AEruby=E3=80=81rubygems<span style=3D=
+"color: rgb(255,102,0);"> =E6=9E=84=E5=BB=BAredis=E9=9B=86=E7=BE=A4</span>=
+=EF=BC=88<code><strong><span style=3D"color: rgb(255,102,0);">=E5=8F=AA=E9=
+=9C=80=E8=A6=81=E5=9C=A8=E4=B8=80=E5=8F=B0=E6=9C=BA=E5=99=A8=E6=93=8D=E4=BD=
+=9C=E5=8D=B3=E5=8F=AF</span></strong></code>=EF=BC=89=E7=9B=B8=E5=85=B3=E6=
+=96=87=E4=BB=B6=E8=BF=99=E9=87=8C=E6=88=91=E4=B9=9F=E8=B4=B4=E5=87=BA=E6=9D=
+=A5=EF=BC=8C=E8=87=AA=E8=A1=8C=E4=B8=8B=E8=BD=BD</li>
+</ul>
+<p><a href=3D"/download/attachments/65634/ruby-2.4.1.tar.gz?version=3D1&amp=
+;modificationDate=3D1605772356330&amp;api=3Dv2" data-linked-resource-id=3D"=
+1966245" data-linked-resource-version=3D"1" data-linked-resource-type=3D"at=
+tachment" data-linked-resource-default-alias=3D"ruby-2.4.1.tar.gz" data-lin=
+ked-resource-content-type=3D"application/x-gzip" data-linked-resource-conta=
+iner-id=3D"65634" data-linked-resource-container-version=3D"6">ruby-2.4.1.t=
+ar.gz</a></p>
+<p><a href=3D"/download/attachments/65634/rubygems-2.6.12.tgz?version=3D1&a=
+mp;modificationDate=3D1605772369798&amp;api=3Dv2" data-linked-resource-id=
+=3D"1966246" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"attachment" data-linked-resource-default-alias=3D"rubygems-2.6.12.tgz" =
+data-linked-resource-content-type=3D"application/x-gzip" data-linked-resour=
+ce-container-id=3D"65634" data-linked-resource-container-version=3D"6">ruby=
+gems-2.6.12.tgz</a></p>
+<p><a href=3D"/download/attachments/65634/redis-3.3.3.gem?version=3D1&amp;m=
+odificationDate=3D1605772324222&amp;api=3Dv2" data-linked-resource-id=3D"19=
+66244" data-linked-resource-version=3D"1" data-linked-resource-type=3D"atta=
+chment" data-linked-resource-default-alias=3D"redis-3.3.3.gem" data-linked-=
+resource-content-type=3D"application/octet-stream" data-linked-resource-con=
+tainer-id=3D"65634" data-linked-resource-container-version=3D"6">redis-3.3.=
+3.gem</a></p>
+<p><a href=3D"/download/attachments/1966505/redis-trib.rb?version=3D1&amp;m=
+odificationDate=3D1606285715488&amp;api=3Dv2" data-linked-resource-id=3D"19=
+66506" data-linked-resource-version=3D"1" data-linked-resource-type=3D"atta=
+chment" data-linked-resource-default-alias=3D"redis-trib.rb" data-linked-re=
+source-content-type=3D"application/octet-stream" data-linked-resource-conta=
+iner-id=3D"1966505" data-linked-resource-container-version=3D"4">redis-trib=
+.rb</a></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">[root@t=
+est-0001 redis-3.2.8]# yum -y install zlib-devel openssl-devel gcc c++ -y
+[root@test-0001 redis-3.2.8]# tar -xf ruby-2.4.1.tar.gz=20
+[root@test-0001 redis-3.2.8]# tar -xf rubygems-2.6.12.tgz
+[root@test-0001 ruby-2.4.1]# cd ruby-2.4.1
+[root@test-0001 ruby-2.4.1]# mkdir /usr/local/ruby
+[root@test-0001 ruby-2.4.1]# ./configure --prefix=3D/usr/local/ruby
+[root@test-0001 ruby-2.4.1]# make
+[root@test-0001 ruby-2.4.1]# make install=20
+[root@test-0001 ruby-2.4.1]# vi /etc/profile
+PATH=3D$PATH:/usr/local/redis/bin/:/usr/local/ruby/bin/
+export PATH
+[root@test-0001 ruby-2.4.1]# source /etc/profile
+[root@test-0001 ruby-2.4.1]# ruby --version
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[root@test-0001 ruby-2.4.1]# mkdir /usr/local/rubygems
+[root@test-0001 ruby-2.4.1]# cd ../rubygems-2.6.12/
+[root@test-0001 rubygems-2.6.12]# ruby setup.rb --prefix=3D/usr/local/rubyg=
+ems/
+[root@test-0001 rubygems-2.6.12]# cd ../ &amp;&amp; gem install redis-3.3.3=
+.gem=20
+Successfully installed redis-3.3.3
+Parsing documentation for redis-3.3.3
+Installing ri documentation for redis-3.3.3
+Done installing documentation for redis after 0 seconds
+1 gem installed
+[root@test-0001 tools]# cp redis-trib.rb /data/redis/bin &amp;&amp; chmod +=
+x /data/redis/bin/redis-trib.rb=20
+[root@test-0001 tools]# cd /usr/local/redis/bin/
+[root@test-0001 bin]# ./redis-trib.rb create --replicas 1 10.121.200.62:430=
+00 10.121.200.240:43000 10.121.200.200:43000 10.121.200.62:43001 10.121.200=
+.240:43001 10.121.200.200:43001
+[root@test-0001 bin]# ./redis-trib.rb create --replicas 1 10.121.200.62:470=
+00 10.121.200.240:47000 10.121.200.200:47000 10.121.200.62:47001 10.121.200=
+.240:47001 10.121.200.200:47001
+[root@test-0001 bin]# ./redis-trib.rb create --replicas 1 10.121.200.62:480=
+00 10.121.200.240:48000 10.121.200.200:48000 10.121.200.62:48001 10.121.200=
+.240:48001 10.121.200.200:48001
+[root@test-0001 bin]# ./redis-trib.rb create --replicas 1 10.121.200.62:460=
+00 10.121.200.240:46000 10.121.200.200:46000 10.121.200.62:46001 10.121.200=
+.240:46001 10.121.200.200:46001
+[root@test-0001 bin]# redis-cli -p 43000=EF=BC=88=E5=90=8E=E9=9D=A2=E7=AB=
+=AF=E5=8F=A3=E8=87=AA=E8=A1=8C=E6=9B=B4=E6=94=B9=E9=AA=8C=E8=AF=81=EF=BC=89
+127.0.0.1:43000&gt; cluster nodes
+b4679fc66adcdb14b71cfbda819e41193b6f5d47 10.121.200.62:43001 slave bcd6693e=
+d52375121f8220dbf43c49989d51113c 0 1597386921429 4 connected
+7613b58f4f12c23c35f04578311ea562f554b8d7 10.121.200.240:43001 slave 77d7702=
+1e232c3f0d133020f7ad3e8ffd6e98d23 0 1597386921929 5 connected
+bcd6693ed52375121f8220dbf43c49989d51113c 10.121.200.240:43000 master - 0 15=
+97386921429 2 connected 5461-10922
+3eb0803c11b1baed26bb2d4da8eb43e88de7be59 10.121.200.200:43000 master - 0 15=
+97386920427 3 connected 10923-16383
+77d77021e232c3f0d133020f7ad3e8ffd6e98d23 10.121.200.62:43000 myself,master =
+- 0 0 1 connected 0-5460
+99568fd46031aa2292faaccb5281464d48899120 10.121.200.200:43001 slave 3eb0803=
+c11b1baed26bb2d4da8eb43e88de7be59 0 1597386921028 6 connected
+127.0.0.1:43000&gt; exit</pre>=20
+</div>
+</div>
+<ul>
+<li>Redis=E5=8A=A0=E5=85=A5=E9=9B=86=E7=BE=A4=E4=B9=8B=E5=90=8E=EF=BC=8C=E4=
+=BF=AE=E6=94=B9=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6=E8=A6=81=E6=8A=8A=E5=AF=
+=86=E7=A0=81=E6=89=93=E5=BC=80=EF=BC=88<strong><span style=3D"color: rgb(25=
+5,102,0);">=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6=E5=AF=86=E7=A0=81=E9=BB=98=
+=E8=AE=A4=E5=86=99=E7=9A=84=E6=98=AFxxx,=E8=AE=B0=E5=BE=97=E4=BF=AE=E6=94=
+=B9=E5=AF=86=E7=A0=81</span></strong>=EF=BC=89=EF=BC=8C=E7=84=B6=E5=90=8E=
+=E9=87=8D=E5=90=AFredis</li>
+</ul>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">[root@t=
+est-0001 bin]# ps -aux |grep redis|awk -F " " '{print $2}' |xargs kill -9
+[root@test-0001 tools]# sed -i 's/#masterauth/masterauth/' /etc/redis/*.con=
+f
+[root@test-0001 tools]# sed -i 's/#requirepass/requirepass/' /etc/redis/*.c=
+onf
+[root@test-0001 bin]# chmod +x /etc/rc.local=20
+[root@test-0001 bin]# vi /etc/rc.local=20
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-43000.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-43001.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-46000.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-46001.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-47000.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-47001.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-48000.con=
+f "
+su - uhome -c "/usr/local/redis/bin/redis-server /etc/redis/redis-48001.con=
+f "
+=E5=90=AF=E5=8A=A8=E6=9C=8D=E5=8A=A1
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-43000.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-43001.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-46000.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-46001.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-47000.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-47001.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-48000.conf "
+[root@test-0001 tools]# su - uhome -c "/usr/local/redis/bin/redis-server /e=
+tc/redis/redis-48001.conf "
+=E6=9C=80=E5=90=8E=E6=A0=B8=E9=AA=8C=E9=9B=86=E7=BE=A4=E6=98=AF=E5=90=A6=E6=
+=AD=A3=E5=B8=B8
+[root@test-0001 tools]# redis-cli -p 43000=EF=BC=88=E5=90=8E=E9=9D=A2=E7=AB=
+=AF=E5=8F=A3=E8=87=AA=E8=A1=8C=E6=9B=B4=E6=94=B9=E9=AA=8C=E8=AF=81=EF=BC=89
+127.0.0.1:43000&gt; AUTH xxxx
+OK
+127.0.0.1:43000&gt; cluster nodes=20
+b4679fc66adcdb14b71cfbda819e41193b6f5d47 10.121.200.62:43001 slave bcd6693e=
+d52375121f8220dbf43c49989d51113c 0 1597386921429 4 connected 7613b58f4f12c2=
+3c35f04578311ea562f554b8d7 10.121.200.240:43001 slave 77d77021e232c3f0d1330=
+20f7ad3e8ffd6e98d23 0 1597386921929 5 connected bcd6693ed52375121f8220dbf43=
+c49989d51113c 10.121.200.240:43000 master - 0 1597386921429 2 connected 546=
+1-10922 3eb0803c11b1baed26bb2d4da8eb43e88de7be59 10.121.200.200:43000 maste=
+r - 0 1597386920427 3 connected 10923-16383 77d77021e232c3f0d133020f7ad3e8f=
+fd6e98d23 10.121.200.62:43000 myself,master - 0 0 1 connected 0-5460 99568f=
+d46031aa2292faaccb5281464d48899120 10.121.200.200:43001 slave 3eb0803c11b1b=
+aed26bb2d4da8eb43e88de7be59 0 1597386921028 6 connected 127.0.0.1:43000&gt;=
+ exit</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><br></p>
+<div>
+<div class=3D"gtx-trans-icon">
+<br>
+</div>
+</div>
+<div>
+<div class=3D"gtx-trans-icon">
+<br>
+</div>
+</div>
+<div>
+<div class=3D"gtx-trans-icon">
+<br>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_29_1956544817.1623736612701--

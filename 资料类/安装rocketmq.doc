@@ -1,0 +1,377 @@
+Date: Tue, 15 Jun 2021 13:57:04 +0800 (CST)
+Message-ID: <1470369537.34.1623736624147@cdh6-slave1>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_33_825606621.1623736624146"
+
+------=_Part_33_825606621.1623736624146
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=E5=AE=89=E8=A3=85rocketmq</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=E5=AE=89=E8=A3=85rocketmq</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<div class=3D"confluence-information-macro confluence-information-macro-not=
+e">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>=E9=9C=80=E8=A6=81=E6=8F=90=E5=89=8D=E5=AE=89=E8=A3=85=E5=A5=BDjdk=EF=BC=
+=8C=E4=BA=8C=E8=BF=9B=E5=88=B6=E7=A8=8B=E5=BA=8F=E5=8C=85=E5=A6=82=E4=B8=8B=
+=E6=89=80=E7=A4=BA</p>
+<p><a href=3D"/download/attachments/1966883/broker1.tar.gz?version=3D1&amp;=
+modificationDate=3D1613639235677&amp;api=3Dv2" data-linked-resource-id=3D"1=
+966884" data-linked-resource-version=3D"1" data-linked-resource-type=3D"att=
+achment" data-linked-resource-default-alias=3D"broker1.tar.gz" data-linked-=
+resource-content-type=3D"application/x-gzip" data-linked-resource-container=
+-id=3D"1966883" data-linked-resource-container-version=3D"1">broker1.tar.gz=
+</a></p>
+<p><a href=3D"/download/attachments/1966883/mqns.tar.gz?version=3D1&amp;mod=
+ificationDate=3D1613639236698&amp;api=3Dv2" data-linked-resource-id=3D"1966=
+885" data-linked-resource-version=3D"1" data-linked-resource-type=3D"attach=
+ment" data-linked-resource-default-alias=3D"mqns.tar.gz" data-linked-resour=
+ce-content-type=3D"application/x-gzip" data-linked-resource-container-id=3D=
+"1966883" data-linked-resource-container-version=3D"1">mqns.tar.gz</a></p>
+</div>
+</div>
+<p><br></p>
+<p>=E8=8A=82=E7=82=B91 =E6=93=8D=E4=BD=9C</p>
+<p>=E4=B8=80=E3=80=81=E9=85=8D=E7=BD=AEhosts<br>[root@localhost idiom]# vi =
+/etc/hosts<br>192.168.8.17 rocketmq.master&nbsp;<br>192.168.8.18 rocketmq.s=
+lave1</p>
+<p>=E4=BA=8C=E3=80=81=E8=A7=A3=E5=8E=8B=E6=96=87=E4=BB=B6<br>[root@localhos=
+t idiom]# tar -xf mqns.tar.gz -C &nbsp;/usr/local/<br>[root@localhost idiom=
+]# tar -xf broker1.tar.gz -C &nbsp;/usr/local/</p>
+<p>=E4=B8=89=E3=80=81=E4=BF=AE=E6=94=B9namesrv=E9=85=8D=E7=BD=AE=E6=96=87=
+=E4=BB=B6=EF=BC=8C=E5=B9=B6=E5=90=AF=E5=8A=A8namesrv=E6=9C=8D=E5=8A=A1<br>[=
+root@localhost idiom]# cd /usr/local/mqns/apache-rocketmq/conf<br>[root@loc=
+alhost conf]# vi namesrv.properties&nbsp;<br>rocketmqHome=3D/usr/local/mqns=
+/apache-rocketmq<br>kvConfigPath=3D/usr/local/mqns/apache-rocketmq/conf/kvC=
+onfig.json<br>configStorePath=3D/usr/local/mqns/apache-rocketmq/conf/namesr=
+v.properties<br>productEnvName=3Duhomemq_center<br>clusterTest=3Dfalse<br>o=
+rderMessageEnable=3Dtrue<br>listenPort=3D9876<br>serverWorkerThreads=3D8<br=
+>serverCallbackExecutorThreads=3D0<br>serverSelectorThreads=3D3<br>serverOn=
+ewaySemaphoreValue=3D256<br>serverAsyncSemaphoreValue=3D64<br>serverChannel=
+MaxIdleTimeSeconds=3D120<br>serverSocketSndBufSize=3D4096<br>serverSocketRc=
+vBufSize=3D4096<br>serverPooledByteBufAllocatorEnable=3Dtrue<br>useEpollNat=
+iveSelector=3Dfalse<br>[root@localhost conf]# cd .. &amp;&amp; vi env.sh&nb=
+sp;<br>export ROCKETMQ_HOME=3D/usr/local/mqns/apache-rocketmq<br>[root@loca=
+lhost apache-rocketmq]# mkdir -p /data/mqns/mqnslogs &amp;&amp; chown uhome=
+:uhome -R /data/mqns<br>[root@localhost apache-rocketmq]# sed -i 's#/usr/lo=
+cal/jdk1.8.0_111#/usr/local/jdk#' bin/runserver.sh =EF=BC=88<span style=3D"=
+color: rgb(255,102,0);">=E8=BF=99=E9=87=8C=E6=B3=A8=E6=84=8Fjdk=E5=AD=98=E5=
+=82=A8=E8=B7=AF=E5=BE=84=EF=BC=8C=E6=A0=B9=E6=8D=AE=E5=85=B7=E4=BD=93=E7=8E=
+=AF=E5=A2=83=E4=BF=AE=E6=94=B9=E6=89=A7=E8=A1=8C=E5=91=BD=E4=BB=A4</span>=
+=EF=BC=89</p>
+<p>[root@localhost apache-rocketmq]# rm -rf logs/ &amp;&amp; ln -s /data/mq=
+ns/mqnslogs/ logs<br>[root@localhost apache-rocketmq]# chown &nbsp;uhome:uh=
+ome -R /usr/local/mqns/<br>[root@localhost apache-rocketmq]# su - uhome -c =
+"cd /usr/local/mqns/apache-rocketmq/ &amp;&amp; ./namesrv.sh"<br>[root@loca=
+lhost apache-rocketmq]# jps<br>80998 Jps<br>80954 NamesrvStartup</p>
+<p>=E5=9B=9B=E3=80=81=E4=BF=AE=E6=94=B9broker=E9=85=8D=E7=BD=AE=E6=96=87=E4=
+=BB=B6=EF=BC=8C=E5=B9=B6=E5=90=AF=E5=8A=A8broker=E6=9C=8D=E5=8A=A1<br>[root=
+@localhost apache-rocketmq]# cd /usr/local/broker1/apache-rocketmq/conf/<br=
+>[root@localhost conf]# vi broker.conf&nbsp;<br>namesrvAddr=3Drocketmq.mast=
+er:9876;rocketmq.slave1:9876<br>brokerClusterName=3DDefaultCluster<br>broke=
+rName=3Dbroker-a<br>brokerId=3D0<br>brokerIP1=3D192.168.8.17<br>listenPort=
+=3D2090<br>deleteWhen=3D04<br>fileReservedTime=3D72<br>diskMaxUsedSpaceRati=
+o=3D88<br>brokerRole=3DMaster<br>flushDiskType=3DASYNC_FLUSH<br>autoCreateT=
+opicEnable=3Dtrue<br>autoCreateSubscriptionGroup=3Dtrue<br>storePathRootDir=
+=3D/data/broker1/data<br>storePathCommitLog=3D/data/broker1/data/commitlog<=
+br>messageDelayLevel=3D1s 5s 10s 30s 1m 2m 4m 8m 16m 32m 1h 2h 4h 8h 16h 1d=
+ 2d 3d<br>[root@localhost conf]# mkdir -p /data/broker1/{data,,commitlog,,l=
+ogs} &amp;&amp; chown uhome:uhome -R /data/broker1/<br>[root@localhost apac=
+he-rocketmq]# sed -i 's#/usr/local/jdk1.8.0_111#/usr/local/jdk#' &nbsp;bin/=
+runbroker.sh<br>[root@localhost apache-rocketmq]# chown uhome:uhome -R /dat=
+a/broker1/ /usr/local/broker1/<br>[root@localhost apache-rocketmq]# su - uh=
+ome -c "cd /usr/local/broker1/apache-rocketmq &amp;&amp; ./broker.sh"<br>[r=
+oot@localhost apache-rocketmq]# jps<br>81963 BrokerStartup<br>80954 Namesrv=
+Startup<br>82140 Jps<br>[root@localhost apache-rocketmq]# cd /usr/local/mqn=
+s/rocketmq-console/bin/<br>[root@localhost bin]# mkdir -p /data/mqns/mqcons=
+olelogs &nbsp;&amp;&amp; chown uhome:uhome -R /data/mqns/mqconsolelogs<br>[=
+root@localhost bin]# sed -i 's#/usr/local/jdk1.8.0_111#/usr/local/jdk#' run=
+broker.sh<br>[root@localhost bin]# sed -i 's@/home/mqns/rocketmq-console@/u=
+sr/local/mqns/rocketmq-console@g' runbroker.sh&nbsp;<br>[root@localhost bin=
+]# sed -i 's/rocketmq.wh.master/rocketmq.master/g' runbroker.sh&nbsp;<br>[r=
+oot@localhost bin]# sed -i 's/rocketmq.wh.slave1/rocketmq.slave1/g' runbrok=
+er.sh&nbsp;<br>[root@localhost bin]# su - uhome -c "cd /usr/local/mqns/rock=
+etmq-console/bin/ &amp;&amp; ./runbroker.sh start"<br>[root@localhost bin]#=
+ jps<br>82759 rocketmq-console-ng-1.0.0.jar<br>82921 Jps<br>81963 BrokerSta=
+rtup<br>80954 NamesrvStartup</p>
+<p>=E8=8A=82=E7=82=B92 =E6=93=8D=E4=BD=9C</p>
+<p>=E4=B8=80=E3=80=81=E9=85=8D=E7=BD=AEhosts<br>[root@localhost idiom]# vi =
+/etc/hosts<br>192.168.8.17 rocketmq.master&nbsp;<br>192.168.8.18 rocketmq.s=
+lave1</p>
+<p>=E4=BA=8C=E3=80=81=E8=A7=A3=E5=8E=8B=E6=96=87=E4=BB=B6<br>[root@localhos=
+t idiom]# tar -xf mqns.tar.gz -C &nbsp;/usr/local/<br>[root@localhost idiom=
+]# tar -xf broker1.tar.gz -C &nbsp;/usr/local/</p>
+<p>=E4=B8=89=E3=80=81=E4=BF=AE=E6=94=B9namesrv=E9=85=8D=E7=BD=AE=E6=96=87=
+=E4=BB=B6=EF=BC=8C=E5=B9=B6=E5=90=AF=E5=8A=A8namesrv=E6=9C=8D=E5=8A=A1<br>[=
+root@localhost idiom]# cd /usr/local/mqns/apache-rocketmq/conf/<br>[root@lo=
+calhost conf]# vi namesrv.properties&nbsp;<br>rocketmqHome=3D/usr/local/mqn=
+s/apache-rocketmq<br>kvConfigPath=3D/usr/local/mqns/apache-rocketmq/conf/kv=
+Config.json<br>configStorePath=3D/usr/local/mqns/apache-rocketmq/conf/names=
+rv.properties<br>productEnvName=3Duhomemq_center<br>clusterTest=3Dfalse<br>=
+orderMessageEnable=3Dtrue<br>listenPort=3D9876<br>serverWorkerThreads=3D8<b=
+r>serverCallbackExecutorThreads=3D0<br>serverSelectorThreads=3D3<br>serverO=
+newaySemaphoreValue=3D256<br>serverAsyncSemaphoreValue=3D64<br>serverChanne=
+lMaxIdleTimeSeconds=3D120<br>serverSocketSndBufSize=3D4096<br>serverSocketR=
+cvBufSize=3D4096<br>serverPooledByteBufAllocatorEnable=3Dtrue<br>useEpollNa=
+tiveSelector=3Dfalse<br>[root@localhost conf]# cd .. &amp;&amp; vi env.sh&n=
+bsp;<br>export ROCKETMQ_HOME=3D/usr/local/mqns/apache-rocketmq<br>[root@loc=
+alhost apache-rocketmq]# mkdir -p /data/mqns/mqnslogs &amp;&amp; chown uhom=
+e:uhome -R /data/mqns<br>[root@localhost apache-rocketmq]# sed -i 's#/usr/l=
+ocal/jdk1.8.0_111#/usr/local/jdk#' bin/runserver.sh&nbsp;<br>[root@localhos=
+t apache-rocketmq]# rm -rf logs/ &amp;&amp; ln -s /data/mqns/mqnslogs/ logs=
+<br>[root@localhost apache-rocketmq]# chown &nbsp;uhome:uhome -R /usr/local=
+/mqns/<br>[root@localhost apache-rocketmq]# su - uhome -c "cd /usr/local/mq=
+ns/apache-rocketmq/ &amp;&amp; ./namesrv.sh"<br>[root@localhost apache-rock=
+etmq]# jps<br>47703 Jps<br>47659 NamesrvStartup</p>
+<p>=E5=9B=9B=E3=80=81=E4=BF=AE=E6=94=B9broker=E9=85=8D=E7=BD=AE=E6=96=87=E4=
+=BB=B6=EF=BC=8C=E5=B9=B6=E5=90=AF=E5=8A=A8broker=E6=9C=8D=E5=8A=A1<br>[root=
+@localhost apache-rocketmq]# cd /usr/local/broker1/apache-rocketmq/conf/<br=
+>[root@localhost conf]# vi broker.conf&nbsp;<br>namesrvAddr=3Drocketmq.mast=
+er:9876;rocketmq.slave1:9876<br>brokerClusterName=3DDefaultCluster<br>broke=
+rName=3Dbroker-b<br>brokerId=3D0<br>brokerIP1=3D192.168.8.18<br>listenPort=
+=3D2090<br>deleteWhen=3D04<br>fileReservedTime=3D72<br>diskMaxUsedSpaceRati=
+o=3D88<br>brokerRole=3DMaster<br>flushDiskType=3DASYNC_FLUSH<br>autoCreateT=
+opicEnable=3Dtrue<br>autoCreateSubscriptionGroup=3Dtrue<br>storePathRootDir=
+=3D/data/broker1/data<br>storePathCommitLog=3D/data/broker1/data/commitlog<=
+br>messageDelayLevel=3D1s 5s 10s 30s 1m 2m 4m 8m 16m 32m 1h 2h 4h 8h 16h 1d=
+ 2d 3d<br>[root@localhost conf]# mkdir -p /data/broker1/{data,,commitlog,,l=
+ogs} &amp;&amp; chown uhome:uhome -R /data/broker1/<br>[root@localhost conf=
+]# sed -i 's#/usr/local/jdk1.8.0_111#/usr/local/jdk#' &nbsp;../bin/runbroke=
+r.sh =EF=BC=88<span style=3D"color: rgb(255,102,0);">=E8=BF=99=E9=87=8C=E6=
+=B3=A8=E6=84=8Fjdk=E5=AD=98=E5=82=A8=E8=B7=AF=E5=BE=84=EF=BC=8C=E6=A0=B9=E6=
+=8D=AE=E5=85=B7=E4=BD=93=E7=8E=AF=E5=A2=83=E4=BF=AE=E6=94=B9=E6=89=A7=E8=A1=
+=8C=E5=91=BD=E4=BB=A4</span>=EF=BC=89<br>[root@localhost conf]# chown uhome=
+:uhome -R /data/broker1/ /usr/local/broker1/<br>[root@localhost conf]# su -=
+ uhome -c "cd /usr/local/broker1/apache-rocketmq &amp;&amp; ./broker.sh"<br=
+>[root@localhost conf]# jps<br>47953 BrokerStartup<br>47659 NamesrvStartup<=
+br>48127 Jps</p>
+    </div>
+</body>
+</html>
+------=_Part_33_825606621.1623736624146--

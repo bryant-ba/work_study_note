@@ -1,0 +1,173 @@
+一、切换到root用户
+su - root
+
+二、关闭selinux：vim /etc/selinux/config
+SELINUX=disabled
+
+---------------------------------------------------------------------------
+三、切换到hadoop用户，配置免密登陆。
+cd 进入hadoop用户的家目录
+ssh-keygen -t rsa [输入完后连按4个回车]
+ssh node100 [yes，输入hadoop用户的密码]
+ssh-copy-id node100 [输入hadoop用户的密码]
+
+
+四、解压软件包到/opt/module
+cd
+tar -zxvf ./jdk-8u181-linux-x64.tar.gz -C /opt/module/
+tar -zxvf ./hadoop-2.7.3.tar.gz -C /opt/module/
+tar -zxvf ./apache-hive-3.1.1-bin.tar.gz -C /opt/module/
+
+五、编辑环境变量：vim ~/.bash_profile
+在文件末尾添加
+JAVA_HOME=/opt/module/jdk1.8.0_181
+HADOOP_HOME=/opt/module/hadoop-2.7.3
+HIVE_HOME=/opt/module/apache-hive-3.1.1-bin
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$HIVE_HOME/bin
+
+export JAVA_HOME
+export HADOOP_HOME
+export HIVE_HOME
+export PATH
+
+六、重新加载该文件，使环境变量生效
+source ~/.bash_profile
+
+java -version
+hadoop version
+
+七、修改hadoop的配置文件:cd /opt/module/hadoop-2.7.3/etc/hadoop
+
+1.vim ./hadoop-env.sh
+export JAVA_HOME=/opt/module/jdk1.8.0_181
+2.vim ./mapred-env.sh
+export JAVA_HOME=/opt/module/jdk1.8.0_181
+3.vim ./yarn-env.sh
+export JAVA_HOME=/opt/module/jdk1.8.0_181
+4.vim ./core-site.xml
+
+        <!-- 指定HDFS中NameNode的地址 -->
+        <property>
+                <name>fs.defaultFS</name>
+                <value>hdfs://node100:9000</value>
+        </property>
+
+        <!-- 指定Hadoop运行时产生文件的存储目录 -->
+        <property>
+                <name>hadoop.tmp.dir</name>
+                <value>/opt/module/hadoopdata</value>
+        </property>
+
+5.vim ./hdfs-site.xml
+
+        <!-- 指定HDFS副本的数量 -->
+        <property>
+                <name>dfs.replication</name>
+                <value>1</value>
+        </property>
+
+        <!-- 指定Hadoop辅助名称节点主机配置 -->
+        <property>
+                <name>dfs.namenode.secondary.http-address</name>
+                <value>node100:50090</value>
+        </property>
+
+
+6.cp ./mapred-site.xml.template ./mapred-site.xml
+vim ./mapred-site.xml
+
+    <!-- 指定MR运行在yarn上 -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+
+7.vim ./yarn-site.xml
+
+        <!-- Reducer获取数据的方式 -->
+        <property>
+                <name>yarn.nodemanager.aux-services</name>
+                <value>mapreduce_shuffle</value>
+        </property>
+
+        <!-- 指定YARN的ResourceManager的地址 -->
+        <property>
+                <name>yarn.resourcemanager.hostname</name>
+                <value>node100</value>
+        </property>
+
+        <!-- 关闭虚拟内存检查 -->
+        <property>
+                <name>yarn.nodemanager.vmem-check-enabled</name>
+                <value>false</value>
+        </property>
+
+8.vim ./slaves
+node100
+
+
+九、格式化hadoop集群
+在node100这台机器上执行：hdfs namenode -format
+
+十、启动/关闭hadoop集群
+在node100这台机器上执行：start-all.sh
+在node100这台机器上执行：stop-all.sh
+
+十一、验证集群
+192.168.5.100:50070
+192.168.5.100:8088
+
+十二、Hadoop的wordcount
+1.vim word.txt
+hello python
+hello java
+hello scala
+hello world
+welcome to beijing
+
+2.wordcount测试
+hadoop fs -mkdir /test
+hadoop fs -put ./word.txt /test
+hadoop jar /opt/module/hadoop-2.7.3/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /test/word.txt /output
+hadoop fs -cat /output/part-r-00000
+
+十三、Hive的安装
+hive --version
+在hdfs上创建hive数据存放目录
+hadoop fs -mkdir /tmp
+hadoop fs -mkdir -p /user/hive/warehouse
+hadoop fs -chmod g+w /tmp
+hadoop fs -chmod g+w /user/hive/warehouse
+在hive的软件目录下执行初始化命令
+bin/schematool -dbType derby -initSchema
+初始化成功后就会在hive的安装目录下生成derby.log日志文件和metastore_db元数据库
+注意：离开hadoop安全模式 hadoop dfsadmin -safemode leave
+
+
+
+MapReduce是一种传统的面向批量任务的处理框架。像Tez这样的新处理引擎越来越倾向于近实时的查询访问。随着Yarn的出现，HDFS正日益成为一个多租户环境，允许很多数据访问模式，例如批量访问、实时访问和交互访问。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

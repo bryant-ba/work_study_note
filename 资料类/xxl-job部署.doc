@@ -1,0 +1,510 @@
+Date: Tue, 15 Jun 2021 13:56:31 +0800 (CST)
+Message-ID: <1896671118.26.1623736591813@cdh6-slave1>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_25_1923826833.1623736591812"
+
+------=_Part_25_1923826833.1623736591812
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>xxl-job=E9=83=A8=E7=BD=B2</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>xxl-job=E9=83=A8=E7=BD=B2</h1>
+    <div class=3D"Section1">
+        <p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1623736591774 {padding: 0px;}
+div.rbtoc1623736591774 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1623736591774 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1623736591774">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-=E4=B8=80=E3=80=81k8s=E7=8E=AF=E5=
+=A2=83">=E4=B8=80=E3=80=81k8s=E7=8E=AF=E5=A2=83</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-1.=E6=96=B0=E5=BB=BA=E6=95=B0=E6=
+=8D=AE=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=8D=AE">1.=E6=96=B0=
+=E5=BB=BA=E6=95=B0=E6=8D=AE=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=
+=8D=AE</a></li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-2.=E4=BF=AE=E6=94=B9yaml=E6=96=87=
+=E4=BB=B6">2.=E4=BF=AE=E6=94=B9yaml=E6=96=87=E4=BB=B6</a></li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-3.=E6=96=B0=E5=BB=BApod=E4=B8=8E=
+=E7=BD=91=E7=BB=9C">3.=E6=96=B0=E5=BB=BApod=E4=B8=8E=E7=BD=91=E7=BB=9C</a><=
+/li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=
+=E7=BD=AE">4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=E7=BD=AE</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-=E4=BA=8C=E3=80=81=E4=BC=A0=E7=BB=
+=9F=E9=83=A8=E7=BD=B2">=E4=BA=8C=E3=80=81=E4=BC=A0=E7=BB=9F=E9=83=A8=E7=BD=
+=B2</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-1.=E6=96=B0=E5=BB=BA=E6=95=B0=E6=
+=8D=AE=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=8D=AE.1">1.=E6=96=B0=
+=E5=BB=BA=E6=95=B0=E6=8D=AE=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=
+=8D=AE</a></li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-2.=E4=BF=AE=E6=94=B9=E8=B0=83=E5=
+=BA=A6=E4=B8=AD=E5=BF=83=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6">2.=E4=BF=AE=
+=E6=94=B9=E8=B0=83=E5=BA=A6=E4=B8=AD=E5=BF=83=E9=85=8D=E7=BD=AE=E6=96=87=E4=
+=BB=B6</a></li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-3.=E4=BF=AE=E6=94=B9=E6=89=A7=E8=
+=A1=8C=E5=99=A8=E9=85=8D=E7=BD=AE">3.=E4=BF=AE=E6=94=B9=E6=89=A7=E8=A1=8C=
+=E5=99=A8=E9=85=8D=E7=BD=AE</a></li>=20
+<li><a href=3D"#xxljob=E9=83=A8=E7=BD=B2-4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=
+=E7=BD=AE.1">4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=E7=BD=AE</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>
+<h2 id=3D"xxljob=E9=83=A8=E7=BD=B2-=E4=B8=80=E3=80=81k8s=E7=8E=AF=E5=A2=83"=
+>=E4=B8=80=E3=80=81k8s=E7=8E=AF=E5=A2=83</h2>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-1.=E6=96=B0=E5=BB=BA=E6=95=B0=E6=8D=AE=
+=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=8D=AE">1.=E6=96=B0=E5=BB=
+=BA=E6=95=B0=E6=8D=AE=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=8D=AE=
+</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">mysql&gt=
+; create database xxl_job;
+mysql&gt; use xxl_job
+mysql&gt; source tables_xxl_job_with_data_k8s.sql</pre>=20
+</div>
+</div>
+<p><a href=3D"/download/attachments/1967036/tables_xxl_job_with_data_k8s.sq=
+l?version=3D1&amp;modificationDate=3D1619426020326&amp;api=3Dv2" data-linke=
+d-resource-id=3D"1967037" data-linked-resource-version=3D"1" data-linked-re=
+source-type=3D"attachment" data-linked-resource-default-alias=3D"tables_xxl=
+_job_with_data_k8s.sql" data-linked-resource-content-type=3D"application/oc=
+tet-stream" data-linked-resource-container-id=3D"1967036" data-linked-resou=
+rce-container-version=3D"7">tables_xxl_job_with_data_k8s.sql</a></p>
+<p>=E6=8E=88=E6=9D=83=E6=95=B0=E6=8D=AE=E5=BA=93=E7=94=A8=E6=88=B7=EF=BC=8C=
+=E6=8A=8Aworker=E8=8A=82=E7=82=B9=E9=83=BD=E5=8A=A0=E4=B8=8A</p>
+<p><br></p>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-2.=E4=BF=AE=E6=94=B9yaml=E6=96=87=E4=BB=
+=B6">2.=E4=BF=AE=E6=94=B9yaml=E6=96=87=E4=BB=B6</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">cd /data/product/=
+saasb/xxljob/
+vi xxl-job-admin.yaml</pre>=20
+</div>
+</div>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>spec:
+&nbsp; &nbsp; &nbsp; hostAliases:
+&nbsp; &nbsp; &nbsp; - ip: "=E6=95=B0=E6=8D=AE=E5=BA=93ip"</pre>=20
+</div>
+</div>
+<p><br></p>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-3.=E6=96=B0=E5=BB=BApod=E4=B8=8E=E7=BD=
+=91=E7=BB=9C">3.=E6=96=B0=E5=BB=BApod=E4=B8=8E=E7=BD=91=E7=BB=9C</h3>
+<p>=E6=96=B0=E5=BB=BApod</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">k create -f xxl-j=
+ob-comfigmap.yaml
+k apply -f xxl-job-comfigmap.yaml
+k apply -f xxl-job-admin.yaml
+k apply -f xxl-job-executor.yaml</pre>=20
+</div>
+</div>
+<p><br></p>
+<p>=E6=96=B0=E5=BB=BA=E7=BD=91=E7=BB=9C</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">ked xxl-job-admin=
+</pre>=20
+</div>
+</div>
+<p><br></p>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=E7=BD=
+=AE">4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=E7=BD=AE</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">vi /usr/local/ngi=
+nx/conf/upstream_pub.conf</pre>=20
+</div>
+</div>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>upstream xxl-job {
+&nbsp; &nbsp;server work1:port;
+&nbsp; &nbsp;server work2:port;
+&nbsp; &nbsp;server work3:port;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">vi /usr/local/ngi=
+nx/conf/service_public.conf</pre>=20
+</div>
+</div>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>location /xxl-job-admin-2.1.0 {
+&nbsp; &nbsp; &nbsp;proxy_pass http://xxl-job;
+}</pre>=20
+</div>
+</div>
+<h2 class=3D"auto-cursor-target" id=3D"xxljob=E9=83=A8=E7=BD=B2-=E4=BA=8C=
+=E3=80=81=E4=BC=A0=E7=BB=9F=E9=83=A8=E7=BD=B2">=E4=BA=8C=E3=80=81=E4=BC=A0=
+=E7=BB=9F=E9=83=A8=E7=BD=B2</h2>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-1.=E6=96=B0=E5=BB=BA=E6=95=B0=E6=8D=AE=
+=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=8D=AE.1">1.=E6=96=B0=E5=BB=
+=BA=E6=95=B0=E6=8D=AE=E5=BA=93=EF=BC=8C=E5=AF=BC=E5=85=A5=E6=95=B0=E6=8D=AE=
+</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">mysql&gt=
+; create database xxl_job;
+mysql&gt; use xxl_job
+mysql&gt; source tables_xxl_job.sql</pre>=20
+</div>
+</div>
+<p><a href=3D"/download/attachments/1967036/tables_xxl_job.sql?version=3D1&=
+amp;modificationDate=3D1619427328034&amp;api=3Dv2" data-linked-resource-id=
+=3D"1967038" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"attachment" data-linked-resource-default-alias=3D"tables_xxl_job.sql" d=
+ata-linked-resource-content-type=3D"application/octet-stream" data-linked-r=
+esource-container-id=3D"1967036" data-linked-resource-container-version=3D"=
+7">tables_xxl_job.sql</a></p>
+<p>=E6=8E=88=E6=9D=83=E6=95=B0=E6=8D=AE=E5=BA=93=E7=94=A8=E6=88=B7</p>
+<p><br></p>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-2.=E4=BF=AE=E6=94=B9=E8=B0=83=E5=BA=A6=
+=E4=B8=AD=E5=BF=83=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6">2.=E4=BF=AE=E6=94=
+=B9=E8=B0=83=E5=BA=A6=E4=B8=AD=E5=BF=83=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6=
+</h3>
+<p>xxl-job=E4=B8=BB=E6=96=87=E4=BB=B6=E8=AF=B7=E9=80=9A=E8=BF=87=E5=BE=AE=
+=E4=BF=A1=E6=88=96QQ=E8=8E=B7=E5=8F=96</p>
+<p>=E6=96=B0=E5=BB=BA=E7=9B=AE=E5=BD=95</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">mkdir /data/uhome=
+/xxl-job/ -p
+cd /data/uhome/xxl-job/ &amp;&amp; tar zxf xxl-job.tgz
+cd /data/uhome/xxl-job/work/xxl-job-2.1/apache-tomcat-9.0.24/webapps
+vi application.properties</pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>spring.datasource.url=3Djdbc:mysql://=E6=95=B0=E6=8D=AE=E5=BA=93ip:330=
+6/xxl_job?Unicode=3Dtrue&amp;characterEncoding=3DUTF-8&amp;autoReconnect=3D=
+true
+spring.datasource.username=3D=E6=95=B0=E6=8D=AE=E5=BA=93=E7=94=A8=E6=88=B7
+spring.datasource.password=3D=E6=95=B0=E6=8D=AE=E5=BA=93=E5=AF=86=E7=A0=81<=
+/pre>=20
+</div>
+</div>
+<p>=E7=AB=AF=E5=8F=A3=E9=BB=98=E8=AE=A4=E6=98=AF38088=EF=BC=8C=E5=A6=82=E6=
+=83=B3=E6=9B=B4=E6=94=B9=E9=BB=98=E8=AE=A4=E7=AB=AF=E5=8F=A3=E5=B0=B1=E4=BF=
+=AE=E6=94=B9server.xml</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">cd /data/uhome/xx=
+l-job/work/xxl-job-2.1/apache-tomcat-9.0.24/conf &amp;&amp; vi server.xml</=
+pre>=20
+</div>
+</div>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>&lt;Connector port=3D"38088" protocol=3D"HTTP/1.1"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;connectionTimeout=3D=
+"20000"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;redirectPort=3D"8443=
+" /&gt;</pre>=20
+</div>
+</div>
+<p>=E5=90=AF=E5=8A=A8=E8=B0=83=E5=BA=A6=E4=B8=AD=E5=BF=83</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">cd /data/uhome/xx=
+l-job/work/xxl-job-2.1/apache-tomcat-9.0.24/bin/ &amp;&amp; ./startup.sh</p=
+re>=20
+</div>
+</div>
+<p><br></p>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-3.=E4=BF=AE=E6=94=B9=E6=89=A7=E8=A1=8C=
+=E5=99=A8=E9=85=8D=E7=BD=AE">3.=E4=BF=AE=E6=94=B9=E6=89=A7=E8=A1=8C=E5=99=
+=A8=E9=85=8D=E7=BD=AE</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">cd /data/uhome/xx=
+l-job/work/xxl-job-executor/bPart/config/&nbsp; &amp;&amp; vi application.p=
+roperties</pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>xxl.job.admin.addresses=3Dhttp://=E8=B0=83=E5=BA=A6=E4=B8=AD=E5=BF=83I=
+P:=E7=AB=AF=E5=8F=A3/xxl-job-admin-2.1.0
+xxl.job.executor.port=3D21020 #=E6=89=A7=E8=A1=8C=E5=99=A8=E7=AB=AF=E5=8F=
+=A3=E5=8F=AF=E8=87=AA=E8=A1=8C=E8=B0=83=E6=95=B4</pre>=20
+</div>
+</div>
+<p>=E5=90=8C=E7=90=86cPart=E4=B9=9F=E4=B8=80=E6=A0=B7</p>
+<p>=E5=90=AF=E5=8A=A8=E6=89=A7=E8=A1=8C=E5=99=A8</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">cd /data/uhome/xx=
+l-job/work/xxl-job-executor/bPart/bin &amp;&amp; ./startup.sh</pre>=20
+</div>
+</div>
+<p><br></p>
+<h3 id=3D"xxljob=E9=83=A8=E7=BD=B2-4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=E7=BD=
+=AE.1">4.=E4=BF=AE=E6=94=B9nginx=E9=85=8D=E7=BD=AE</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: RDark" data-theme=3D"RDark">vi /usr/local/ngi=
+nx/conf/service_public.conf</pre>=20
+</div>
+</div>
+<div class=3D"preformatted panel" style=3D"border-width: 1px;">
+<div class=3D"preformattedContent panelContent">=20
+<pre>location /xxl-job-admin-2.1.0 { &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;proxy_pass http://=E8=B0=83=E5=BA=A6=E4=B8=AD=E5=BF=83I=
+P:=E7=AB=AF=E5=8F=A3;
+}</pre>=20
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_25_1923826833.1623736591812--
