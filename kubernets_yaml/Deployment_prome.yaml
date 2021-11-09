@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prometheus
+  template:
+    metadata:
+      labels:
+        app: prometheus
+    spec:
+      serviceAccountName: prometheus
+      serviceAccount: prometheus 
+      containers:
+      - name: prometheus
+        image: prom/prometheus:v2.2.1
+        command:
+        - "/bin/prometheus"
+        args:
+        - "--config.file=/etc/prometheus/prometheus.yml"
+        ports:
+        - containerPort: 9090
+          protocol: TCP
+        volumeMounts:
+        - mountPath: "/data_oss/prometheus"
+          name: prometheus-config
+      volumes:
+      - name: prometheus-config
+        configMap:
+          name: prometheus-config
