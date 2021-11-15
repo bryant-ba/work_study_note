@@ -173,3 +173,10 @@ limit 20
 stop slave;
 CHANGE REPLICATION FILTER REPLICATE_WILD_IGNORE_TABLE = ('dis_nc.%');
 start slave;
+
+实际IN和EXIST查询效率：当大表IN小表时效率高；小表EXIST大表时效率高
+
+IN表是外边和内表进行hash连接，是先执行子查询。
+EXISTS是对外表进行循环，然后在内表进行查询。
+因此如果外表数据量大，则用IN，如果外表数据量小，也用EXISTS。
+IN有一个缺陷是不能判断NULL，因此如果字段存在NULL值，则会出现返回，因为最好使用NOT EXISTS。
