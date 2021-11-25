@@ -180,3 +180,24 @@ IN表是外边和内表进行hash连接，是先执行子查询。
 EXISTS是对外表进行循环，然后在内表进行查询。
 因此如果外表数据量大，则用IN，如果外表数据量小，也用EXISTS。
 IN有一个缺陷是不能判断NULL，因此如果字段存在NULL值，则会出现返回，因为最好使用NOT EXISTS。
+
+查询数据库中的存储过程和函数
+
+select `name` from mysql.proc where db = 'xx' and `type` = 'PROCEDURE'   //存储过程
+select `name` from mysql.proc where db = 'xx' and `type` = 'FUNCTION'   //函数
+
+show procedure status; //存储过程
+show function status;     //函数
+
+查看存储过程或函数的创建代码
+
+show create procedure proc_name;
+show create function func_name;
+
+查看视图
+SELECT * from information_schema.VIEWS   //视图
+SELECT * from information_schema.TABLES   //表
+
+查看触发器
+SHOW TRIGGERS [FROM db_name] [LIKE expr]
+SELECT * FROM triggers T WHERE trigger_name=”mytrigger” \G
