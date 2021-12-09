@@ -1,3 +1,21 @@
+show binary logs;
+#查看MySQL服务器上的binlog文件
+
+#查看日志开启状态 
+show variables like 'log_%';
+
+#查看所有binlog日志列表
+show master logs;
+
+#查看最新一个binlog日志的编号名称，及其最后一个操作事件结束点 
+show master status;
+
+#刷新log日志，立刻产生一个新编号的binlog日志文件，跟重启一个效果 
+flush logs;
+
+#清空所有binlog日志 
+reset master;
+
 select `name` from mysql.proc where db = 'your_db_name' and `type` = 'PROCEDURE'
 查找全部的存储过程
 
