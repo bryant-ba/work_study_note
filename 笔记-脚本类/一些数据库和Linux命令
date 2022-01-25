@@ -1,3 +1,6 @@
+SHOW INDEX FROM tablename;
+查看表的索引
+
 show binary logs;
 #查看MySQL服务器上的binlog文件
 
