@@ -224,3 +224,22 @@ SELECT * from information_schema.TABLES   //表
 SHOW TRIGGERS [FROM db_name] [LIKE expr]
 SELECT * FROM triggers T WHERE trigger_name=”mytrigger” \G
 
+几条有用的docker命令
+dockers system df  查看docker容器，镜像，网络，挂载的卷在系统上的占用
+docker image prune  删除所有未被 tag 标记和未被容器使用的镜像
+docker image prune -a 删除所有未被容器使用的镜像
+docker container prune 删除所有停止运行的容器
+docker volume prune  删除所有未被挂载的卷 
+docker network prune 删除所有网络
+docker system prune 删除 docker 所有资源
+docker inspect [OPTIONS] NAME|ID [NAME|ID...]  获取容器/镜像的元数据
+OPTIONS说明：
+-f :指定返回值的模板文件。
+-s :显示总的文件大小。
+--type :为指定类型返回JSON。
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name 获取container_name的ip
+docker ps -q | xargs docker inspect --format '{{.State.Pid}}, {{.Id}}, {{.Name}}, {{.GraphDriver.Data.WorkDir}}' | grep "docker/overlay2/下的文件夹名称" 获取对应的容器信息
+docker ps -q | xargs docker inspect --format '{{.State.Pid}}, {{.Id}}, {{.Name}}, {{.GraphDriver.Data.WorkDir}}' | grep  container_name 获取docker/overlay2/下的文件夹
+
+
+kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod 批量删除Evicted
