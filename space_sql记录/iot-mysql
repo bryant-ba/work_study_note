@@ -1,0 +1,27 @@
+2022-06-08 17:13
+SELECT COUNT(1) FROM t_alarm WHERE (device_code LIKE '%1405057955781726210_MRC83%' AND project_code = 'ZH_00002_XM_00000001')
+慢sql: LIKE条件"`device_code` LIKE "%1405057955781726210_MRC83%""存在前置通配符,不能使用索引
+
+2022-06-08 16:57
+SELECT
+  device_name,
+  device_code,
+  property_code,
+  property_value,
+  report_time,
+  create_time
+FROM
+  t_acquisition_data
+WHERE
+  logic_del = 0
+  AND (
+    project_code = 'ZH_00001_XM_00000001'
+    AND property_code = 'P'
+    AND report_time BETWEEN '2022-06-07 16:30:00'
+    AND '2022-06-08 16:30:00'
+    AND area_id_path LIKE '%root,4403051001000000000000000000000000000000,4d830b1994e727d9d53d18d5e982dd10%'
+  )
+ORDER BY
+  report_time ASC
+慢sql: LIKE条件"`area_id_path` LIKE "%root,4403051001000000000000000000000000000000,4d830b1994e727d9d53d18d5e982dd10%""存在前置通配符,不能使用索引
+

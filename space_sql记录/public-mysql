@@ -1,0 +1,50 @@
+2022-06-08 15:00
+SELECT * FROM undo_log WHERE branch_id = 277815466637217793 AND xid = '10.2.0.8:8091:277815454024630276' FOR UPDATE
+INSERT INTO undo_log (branch_id, xid, context_, rollback_info, log_status, log_created, log_modified) VALUES (277815466637217793, '10.2.0.8:8091:277815454024630276', 'serializer=jackson', '{}', 1, now(6), now(6))
+引起死锁：select for update导致悲观锁
+
+2022-06-08 18:23
+SELECT
+  TASK_ID_,
+  ACT_TASK_ID_,
+  TREE_ID_,
+  NAME_,
+  KEY_,
+  BILL_TYPE_,
+  BILL_NO_,
+  BUS_KEY_,
+  DESCP_,
+  SUBJECT_,
+  OWNER_,
+  ASSIGNEE_,
+  ACT_INST_ID_,
+  ACT_DEF_ID_,
+  DEF_ID_,
+  INST_ID_,
+  STATUS_,
+  PRIORITY_,
+  EXPIRED_TIME_,
+  TIMEOUT_REMINDER,
+  TASK_TYPE_,
+  PARENT_ID_,
+  PRE_TASK_ID_,
+  EXECUTION_ID_,
+  EXECUTOR_,
+  IS_MESSAGE_,
+  IS_THE_MESSAGE_,
+  APP_ID_,
+  PROJECT_ID_,
+  TENANT_ID_,
+  CREATE_TIME_,
+  UPDATE_TIME_,
+  CREATE_BY_,
+  UPDATE_BY_,
+  CREATE_DEP_ID_
+FROM
+  BPM_TASK
+WHERE
+  (ACT_INST_ID_ = '1534335493075869697')
+慢sql: 索引未加alter table
+  `spaas_bpm`.`bpm_task`
+add
+  index index_1(`ACT_INST_ID_`);
