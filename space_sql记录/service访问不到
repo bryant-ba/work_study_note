@@ -1,0 +1,4 @@
+ibp网关gateway-web service IP可以访问，service地址访问不通
+10.122.168.222:8000 可以访问
+ibp-gateway-web.test.svc.spaceiot.local:8000 访问不通
+DNS域名服务器解析hang住，重启named
