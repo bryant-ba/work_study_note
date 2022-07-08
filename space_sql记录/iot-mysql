@@ -110,3 +110,6 @@ WHERE
   `spaas_form`.`t_ord_info`
 add
   index index_1(`PARENT_ID`);
+  
+SELECT  id,rule_id,rule_name,area_code,code_path,area_name,device_address,deal,reset_date,create_date,threshold,reported_val,device_code,device_name,product_code,product_name,event_code,type_desc,type,level_desc,level,order_type_id,order_id,process_ins_id,wo_level_desc,wo_level,is_processed AS processed,is_manager AS manager,assign_person,content,org_codes,alarm_code,notice_types,notice_url,react_log_id,react_log_prefix,source_code,source_type,source_type_name,alarm_title,system_code,create_time,update_time,alarm_attr,alarm_attr_code,alarm_reason,alarm_reason_str,alarm_duration,receiver,receiver_id,remark,handler,deal_type,alarm_tag,tenement_code,project_code,relative_info,event  FROM t_alarm WHERE (id = 1545202724393512961) limit 1 
+iot saas_iot_alert 库 表"saas_iot_alert.t_alarm"中字段"id"与参数类型不匹配,隐式转换会导致条件不能使用索引
